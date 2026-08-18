@@ -436,13 +436,6 @@ h1 span {
    CENTERED
    ========================= */
 
-.last-video {
-  grid-column: 1 / 3;
-
-  width: calc(50% - 20px);
-
-  justify-self: center;
-}
 
 
 /* =========================
@@ -593,15 +586,83 @@ footer {
   }
 
 
-  .last-video {
-    grid-column: auto;
-
-    width: 100%;
-  }
-
-
+  
   .video-card h3 {
     font-size: 21px;
+  }
+
+}
+/* Make ONLY the second video horizontal */
+
+.video-card:nth-child(2) .video-wrapper {
+  aspect-ratio: 16 / 9;
+}
+
+.video-card:nth-child(2) .video-wrapper video {
+  object-fit: contain;
+}
+
+/* =========================
+   GOOGLE PAGE BUTTON
+   ========================= */
+
+.google-button {
+  position: fixed;
+
+  right: 24px;
+  bottom: 24px;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--line);
+
+  border-radius: 50%;
+
+  background: rgba(247, 242, 234, 0.75);
+
+  color: var(--accent);
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 8px 25px rgba(45, 35, 30, .10);
+
+  transition: all .3s ease;
+
+  z-index: 50;
+}
+
+.google-button:hover {
+  background: var(--ink);
+
+  color: var(--cream);
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(45, 35, 30, .18);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .google-button {
+    right: 16px;
+    bottom: 16px;
+
+    width: 38px;
+    height: 38px;
+
+    font-size: 14px;
   }
 
 }
