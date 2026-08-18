@@ -1,56 +1,292 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Happy Birthday ✦</title>
   <meta name="description" content="A little birthday surprise." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <div class="grain"></div>
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
 
+
   <main class="page">
+
+    <!-- TOP NAVIGATION -->
     <nav class="nav">
       <span class="nav-mark">✦</span>
-      <span>A little something for you</span>
-      <span class="nav-date">08.27</span>
+
+      
+
+      <!-- CHANGE THE DATE HERE -->
+      <span class="nav-date">18.08</span>
     </nav>
 
+
+    <!-- HERO -->
     <section class="hero">
-      <p class="eyebrow">A very special day</p>
-      <h1>Happy<br><span>Birthday</span></h1>
-      <p class="subtitle">to someone who makes ordinary days<br class="desktop"> feel a little more extraordinary.</p>
 
-      <button class="reveal-btn" id="revealBtn">
-        <span>Open your surprise</span>
-        <span class="arrow">↓</span>
-      </button>
+      
+
+      <h1>
+        Happy<br>
+        <span>Birthday</span>
+      </h1>
+
+
+      <button
+  class="reveal-btn"
+  id="revealBtn"
+  onclick="document.getElementById('videos').scrollIntoView({ behavior: 'smooth' })"
+>
+  <span>Open your surprise</span>
+  <span class="arrow">↓</span>
+</button>
+
     </section>
 
-    <section class="message" id="message">
-      <div class="message-line"></div>
-      <p class="small-label">A note for you</p>
-      <p class="note">
-        I hope this year brings you the kind of moments<br class="desktop">
-        you remember long after they're over.
-      </p>
-      <p class="script">Here’s to you.</p>
-      <div class="sparkles">✦ &nbsp; ✧ &nbsp; ✦</div>
+
+   
+
+
+    <!-- ============================= -->
+    <!-- FRIEND BIRTHDAY VIDEOS -->
+    <!-- ============================= -->
+
+    <section class="videos" id="videos">
+
+      <div class="video-heading">
+
+        <p class="small-label">
+          A little something from your people
+        </p>
+
+        <h2>
+          They wanted to<br>
+          <span>say something.</span>
+        </h2>
+
+        <p class="video-intro">
+          Seven little messages from seven people
+          <br class="desktop">
+          who wanted to make your day a little more special.
+        </p>
+
+      </div>
+
+
+      <div class="video-grid">
+
+
+        <!-- VIDEO 1 -->
+        <article class="video-card">
+
+          <div class="video-wrapper">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source src="videos/friend1.mp4" type="video/mp4">
+
+              Your browser does not support video playback.
+            </video>
+
+          </div>
+
+          <p class="friend-number">01</p>
+
+          <!-- CHANGE NAME -->
+          <h3>Friend's Name</h3>
+
+        </article>
+
+
+        <!-- VIDEO 2 -->
+        <article class="video-card">
+
+          <div class="video-wrapper">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source src="videos/friend2.mp4" type="video/mp4">
+
+              Your browser does not support video playback.
+            </video>
+
+          </div>
+
+          <p class="friend-number">02</p>
+
+          <h3>Friend's Name</h3>
+
+        </article>
+
+
+        <!-- VIDEO 3 -->
+        <article class="video-card">
+
+          <div class="video-wrapper">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source src="videos/friend3.mp4" type="video/mp4">
+
+              Your browser does not support video playback.
+            </video>
+
+          </div>
+
+          <p class="friend-number">03</p>
+
+          <h3>Friend's Name</h3>
+
+        </article>
+
+
+        <!-- VIDEO 4 -->
+        <article class="video-card">
+
+          <div class="video-wrapper">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source src="videos/friend4.mp4" type="video/mp4">
+
+              Your browser does not support video playback.
+            </video>
+
+          </div>
+
+          <p class="friend-number">04</p>
+
+          <h3>Friend's Name</h3>
+
+        </article>
+
+
+        <!-- VIDEO 5 -->
+        <article class="video-card">
+
+          <div class="video-wrapper">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source src="videos/friend5.mp4" type="video/mp4">
+
+              Your browser does not support video playback.
+            </video>
+
+          </div>
+
+          <p class="friend-number">05</p>
+
+          <h3>Friend's Name</h3>
+
+        </article>
+
+
+        <!-- VIDEO 6 -->
+        <article class="video-card">
+
+          <div class="video-wrapper">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source src="videos/friend6.mp4" type="video/mp4">
+
+              Your browser does not support video playback.
+            </video>
+
+          </div>
+
+          <p class="friend-number">06</p>
+
+          <h3>Friend's Name</h3>
+
+        </article>
+
+
+        <!-- VIDEO 7 -->
+        <article class="video-card last-video">
+
+          <div class="video-wrapper">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source src="videos/friend7.mp4" type="video/mp4">
+
+              Your browser does not support video playback.
+            </video>
+
+          </div>
+
+          <p class="friend-number">07</p>
+
+          <h3>Friend's Name</h3>
+
+        </article>
+
+
+      </div>
+
     </section>
 
+
+    <!-- FOOTER -->
     <footer>
-      <span>Made with a little love</span>
-      <span>♡</span>
+
+      <span>
+        Made with a little love
+      </span>
+
+      <span>
+        ♡
+      </span>
+
     </footer>
+
   </main>
 
+
+  <!-- CONFETTI -->
   <canvas id="confetti"></canvas>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
+```
